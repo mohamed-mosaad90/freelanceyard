@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven & Hearth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #8B4513;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .card button {
+            background-color: #8B4513;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #A0522D;
+        }
+
+        footer {
+            background-color: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Haven & Hearth</h1>
+        <p>Your cozy home essentials</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Fireplace Accessories">
+            <h3>Fireplace Accessories</h3>
+            <p>Enhance your fireplace with our rustic tools and decor.</p>
+            <button onclick="alert('Fireplace Accessories - Coming Soon!')">View Details</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Rustic Wall Art">
+            <h3>Rustic Wall Art</h3>
+            <p>Add charm to your walls with our handcrafted art pieces.</p>
+            <button onclick="alert('Rustic Wall Art - Coming Soon!')">View Details</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Seasonal Home Decor">
+            <h3>Seasonal Home Decor</h3>
+            <p>Celebrate every season with our curated home decor.</p>
+            <button onclick="alert('Seasonal Home Decor - Coming Soon!')">View Details</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Haven & Hearth. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
